@@ -67,7 +67,7 @@ class HomeFragment : Fragment() {
                 bundle.putString("topic_name", topicName)
                 quizFragment.arguments = bundle
 
-                // Start the transaction to replace the current fragment with QuizFragment
+
                 parentFragmentManager.beginTransaction()
                     .replace(R.id.frameLayout, quizFragment)
                     .addToBackStack(null)

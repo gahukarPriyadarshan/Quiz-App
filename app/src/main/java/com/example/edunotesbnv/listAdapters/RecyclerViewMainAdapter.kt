@@ -27,7 +27,7 @@ class RecyclerViewMainAdapter(private val arrayList: ArrayList<Topic>,var contex
             }
         }
     }
-
+    
     // for item click
     interface OnItemClickListener {
         fun onItemClick(position: Int)

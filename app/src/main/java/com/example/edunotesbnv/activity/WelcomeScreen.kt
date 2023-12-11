@@ -1,4 +1,4 @@
-package com.example.edunotesbnv
+package com.example.edunotesbnv.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +15,7 @@ class WelcomeScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener{
-            val intent = Intent(this,MainActivity :: class.java)
+            val intent = Intent(this, MainActivity :: class.java)
             startActivity(intent)
             finish()
         }

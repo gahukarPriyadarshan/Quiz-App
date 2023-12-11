@@ -212,7 +212,6 @@ class QuizFragment : Fragment() {
         }
 
         transaction.replace(R.id.frameLayout, quizResultFragment)
-        transaction.addToBackStack(null)
         transaction.commit()
     }
 }

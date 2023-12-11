@@ -9,9 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.edunotesbnv.databinding.FragmentResultBinding
-import com.example.edunotesbnv.listAdapters.RecyclerViewAdapter
+import com.example.edunotesbnv.listAdapters.RecyclerViewResultAdapter
 import com.example.edunotesbnv.roomDB.Result
 import com.example.edunotesbnv.roomDB.RoomDataB
 import kotlinx.coroutines.Dispatchers
@@ -44,7 +43,7 @@ class ResultFragment : Fragment(){
             listOfResult = database.dao().getAllResult()
 
             withContext(Dispatchers.Main) {
-                resultRecyclerView.adapter = RecyclerViewAdapter(listOfResult, this@ResultFragment)
+                resultRecyclerView.adapter = RecyclerViewResultAdapter(listOfResult, this@ResultFragment)
             }
         }
 

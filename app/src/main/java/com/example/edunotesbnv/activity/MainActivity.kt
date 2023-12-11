@@ -1,8 +1,9 @@
-package com.example.edunotesbnv
+package com.example.edunotesbnv.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.edunotesbnv.R
 import com.example.edunotesbnv.databinding.ActivityMainBinding
 import com.example.edunotesbnv.fragments.HomeFragment
 import com.example.edunotesbnv.fragments.ResultFragment

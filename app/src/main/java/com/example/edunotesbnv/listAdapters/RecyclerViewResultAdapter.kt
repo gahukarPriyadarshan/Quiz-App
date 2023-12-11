@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.edunotesbnv.R
 import com.example.edunotesbnv.roomDB.Result
 
-class RecyclerViewAdapter(var listOfResult : List<Result>, var context : Fragment):
-RecyclerView.Adapter<RecyclerViewAdapter.ResultViewHolder>(){
+class RecyclerViewResultAdapter(var listOfResult : List<Result>, var context : Fragment):
+RecyclerView.Adapter<RecyclerViewResultAdapter.ResultViewHolder>(){
     class ResultViewHolder(itemView : View) :RecyclerView.ViewHolder(itemView) {
         val timeStamp = itemView.findViewById<TextView>(R.id.tvTopicR)
         val topic = itemView.findViewById<TextView>(R.id.tvTimeStamp)
